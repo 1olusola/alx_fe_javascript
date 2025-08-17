@@ -1,62 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Quote Generator</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Quote Generator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Dynamic Quote Generator</h1>
-        
-        <div class="quote-count" id="quoteCount">Loading quotes...</div>
-        
-        <div id="quoteDisplay">
-            <p>Click "Show Random Quote" to get started!</p>
-        </div>
-        
-        <div class="controls">
-            <button id="newQuoteBtn">Show Random Quote</button>
-            <select id="categoryFilter">
-                <option value="all">All Categories</option>
-            </select>
-            <button id="toggleFormBtn">Add New Quote</button>
-        </div>
-        
-        <div id="addQuoteForm" style="display: none;">
-            <div class="form-section">
-                <h3>Add New Quote</h3>
-                <div id="formMessage"></div>
-                
-                <div class="form-group">
-                    <label for="newQuoteText">Quote Text:</label>
-                    <input type="text" id="newQuoteText" placeholder="Enter your inspiring quote here..." maxlength="500">
-                </div>
-                
-                <div class="form-group">
-                    <label for="newQuoteCategory">Category:</label>
-                    <input type="text" id="newQuoteCategory" placeholder="Enter category (e.g., Motivation, Life, Success)" maxlength="50">
-                </div>
-                
-                <div class="form-group">
-                    <label for="newQuoteAuthor">Author (optional):</label>
-                    <input type="text" id="newQuoteAuthor" placeholder="Who said this quote?" maxlength="100">
-                </div>
-                
-                <button onclick="addQuote()">Add Quote</button>
-                <button type="button" onclick="clearForm()">Clear</button>
-            </div>
-        </div>
-        
-        <div id="manageCategories" style="display: none;">
-            <div class="form-section">
-                <h3>Manage Categories</h3>
-                <div id="categoriesList"></div>
-            </div>
-        </div>
-    </div>
+  <h1>Dynamic Quote Generator</h1>
 
-    <script src="script.js"></script>
+  <div id="quoteDisplay"></div>
+
+  <button id="newQuote">Show New Quote</button>
+
+  <!-- Step 3 form block, pasted verbatim -->
+  <div>
+    <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
+    <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
+    <button onclick="addQuote()">Add Quote</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
