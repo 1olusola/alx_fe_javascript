@@ -35,7 +35,7 @@ async function syncQuotes() {
     populateCategories();
     displayFilteredQuotes(selectedCategory);
     /* 5️⃣  UI notification */
-    showSyncNotification('Data synced & conflicts resolved');
+    showSyncNotification('Quotes synced with server!');
   }
 }
 
@@ -147,3 +147,4 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('newQuote').addEventListener('click', showRandomQuote);
   startPeriodicSync(); // launches periodic fetch
 });
+
