@@ -46,3 +46,12 @@ input[type="text"] {
   border-radius: 4px;
   width: 220px;
 }
+
+#quoteDisplay ul {
+  list-style: none;
+  padding: 0;
+}
+
+#quoteDisplay li {
+  margin: 0.5rem 0;
+}
